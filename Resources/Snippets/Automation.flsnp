@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.Online">
+    <head>
+        <link href="../Stylesheets/newDefault.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3 class="masterpage" MadCap:conditions="Primary.Online">
+            <img class="topicLogo" src="../Images/dspMigrate_Logo-Components-AUTOGEN_sized.png" />
+        </h3>
+    </body>
+</html>

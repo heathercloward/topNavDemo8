@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="UseCases _Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="" data-mc-has-content-body="True" data-mc-conditions="Primary.Target_Design" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Set Rule Priority for Fields in Field Groups</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="Resources/Stylesheets/newDefault.css" rel="stylesheet" />
+        <script src="Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="Resources/Scripts/require.min.js">
+        </script>
+        <script src="Resources/Scripts/require.config.js">
+        </script>
+        <script src="Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="index.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Start typing to search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div id="topbar">
+                                    <div>&#160;</div>
+                                    <div id="sections_btn_holder">
+                                        <button><span id="navarrow">▼</span>
+                                        </button>
+                                    </div>
+                                    <div id="sections_panel">
+                                        <div id="components">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="topic-layout" data-sticky-container="">
+                                        <div>
+                                            <h3 class="masterpage" data-mc-conditions="Primary.Online">
+                                                <img class="topicLogo" src="Resources/Images/dspMigrate_Logo-Components-DESIGN_sized.png" />
+                                            </h3>
+                                            <h2><a name="aanchor447"></a>
+                                                <MadCap:concept term="Target Design" />Set Rule Priority for Fields in Field Groups </h2>
+                                            <p>A field’s priority determines the order in which the rule based on that field is run and is set on the <i>Target Fields</i> 
+ page. In this example, the PSTAT field’s priority is 4.</p>
+                                            <p>All fields are associated with the default field group (*).</p>
+                                            <p>The priority for fields in the default field group &#160;(*) is set by the order the field appears in the Target table. If the default field group (*) were the only field group used for the PSTAT field for the ttMARA Target, then no other priority is necessary.</p>
+                                            <p>Fields can also be associated with different field groups to apply different filters to values in the field. In this case, the rule priority offset helps to define the order in which the filters are applied and the rules are run on these filtered values.</p>
+                                            <p>When using field groups, the order that rules run is important.</p>
+                                            <p>The rules assigned to field groups other than default field group (*) must run on a subset of data prior to the rules assigned to the default field group 
+ (*), which run on all data.</p>
+                                            <p>When a rule runs, it searches for matches based on those fields that contain NULL.</p>
+                                            <p>If the default field group (*) rules run first, all NULL values in fields are replaced with values according to the default field group (*) rules. If the rules associated with other field groups run after the default field group (*) 
+ rules, the rules will not return matches, because the fields will have been populated according to the default field group (*) rules (as in, no fields will contain NULL).Therefore, 
+ rules associated with field groups other than the default field group 
+ (*) will <span style="color: #ff0000;font-weight: bold;">not</span> 
+ be applied correctly if the rules associated with the default field group 
+ (*) run first.</p>
+                                            <p>For example, 
+ the field group FERT runs rules on records with a Material Type of Finished Goods, setting a default value of 5 in the Maintenance Status field (PSTAT) 
+ for all Finished Goods. This rule has a priority of 36. After this rule runs, the PSTAT field contains 5 for Finished Goods, and NULL for all other records. The next rule for the default field group (*) has a priority of 40, and runs on all records where the PSTAT value is NULL.&#160;If the rules associated with the default field group (*) ran first, 
+ no values in the PSTAT would be NULL, and the rule associated with the FERT field group, which searches for NULL values, would not be applied. 
+ This is why setting the priority on the field group for rule generation is important.</p>
+                                            <p>The order that a rule runs depends on the rule’s priority and two other settings: 
+ the Source Priority Multiplier and the Rule Priority Offset.</p>
+                                            <p>The <b>Source Priority Multiplier</b>, set on the Map tab of the <i><a href="Parameters.htm">Parameters</a></i> 
+ page in Console, is applied to the rule’s priority. If the PSTAT Target field’s priority is 4 and the Source Priority Multiplier is 10, the rule associated with that field will be assigned a priority of 40. The priority for the PSTAT field in the default field group (*) &#160;is 40, so an additional setting must be used for other field groups to set them to run prior to the default field group (*) .</p>
+                                            <p>The <b>Rule Priority Offset</b>, which is always a negative number, is set on the <i><a href="Field_Groups.htm">Field Groups</a></i> page. This value is subtracted from the rule’s priority to set the order the rule is run. If the Rule Priority Offset for the PSTAT field’s field group HALB is -4, 
+the final priority set for the rule to run in Transform is 36. &#160;Since the default field group (*) does not have a Rule Priority Offset configured (and its priority is 40), it will run after the HALB field group.</p>
+                                            <div id="feedback-survey">
+                                                <div class="feedback-question">
+                                                    <p class="feedback-question">Was this article helpful?</p>
+                                                    <button class="feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>
+                                                    <button class="feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button>
+                                                </div>
+                                                <div class="feedback-reason no">
+                                                    <div>
+                                                        <p class="feedbackW">Sorry about that.</p>
+                                                        <p>Why wasn't this helpful? (check all that apply)</p>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                            <label for="option1">Couldn't find what I was looking for</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                            <label for="option2">Instructions wrong or confusing.</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option3" value="Not Enough Content" data-analytics-label="Not Enough content" />
+                                                            <label for="option3">Needs more content.</label>
+                                                        </div>
+                                                        <div class="feedback-reason no-thanks">
+                                                            <p class="feedback-question"><b>Thanks for your feedback.</b>
+                                                            </p>
+                                                            <p class="feedbackW">Want to tell us more?</p>
+                                                            <p>Send an email to our authors to leave your feedback.</p>
+                                                            <p><a href="mailto:Helpfeedback@boaweb.com?subject=Feedback" id="feedbackEmailLink">Email us</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="feedback-reason yes-thanks">
+                                                    <p class="feedbackW">Great!
+							</p>
+                                                    <p>Thanks for your feedback.</p>
+                                                </div>
+                                            </div>
+                                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                            <div class="cta" id="feedback">
+                                                <p>
+                                                    <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+								var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+								var mailDisplay = '🖂 Send feedback about this topic'; 
+								document.write( 
+								'<a href="mailto:helpfeedback@boaweb.com' 
+								+ '?subject=' + escape(mailSubject) 
+								+ '&body=' + escape(mailBody) 
+								+ '">' + mailDisplay + '</a>' 
+							);/*]]>*/</script>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="nocontent menu _Skins_ContextMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer" id="sticky_bottom">
+                                    <div class="topicFooter">
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <h5>Get in Touch</h5>
+                                            <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                                            </p>
+                                            <p class="footer"><a href="#">Access Product Ideas Portal</a>
+                                            </p>
+                                            <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                                            </p>
+                                            <h5>Related Content</h5>
+                                            <p class="footer"><a href="glossary.htm" target="_blank">Glossary</a>
+                                            </p>
+                                            <p class="footer"><a href="When_to_request_a_new_product_license.htm">Product Licenses</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer" id="di">&#160;
+					</p>
+                                            <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <img src="Resources/Images/boa-logo-small-buffer.png" />
+                                            </p>
+                                            <p class="footer">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+					</p>
+                                            <p class="footer copyright">
+                                                <p class="footer"><span class="PrimaryCopyright Date">© 2018</span> BackOffice Associates, LLC and/or its affiliates. All rights reserved. </p>
+                                                <p class="footer">The DSP logo is a registered trademark of BackOffice Associates®. Other names appearing on the Site may be trademarks of their respective owners.</p>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/">Privacy Policy</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/trademarks/">Trademarks</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/">Terms of Use</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script type="text/javascript" src="https://www.google.com/jsapi">
+                                </script>
+                                <!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+                                <script type="text/javascript" src="Resources/Scripts/custom.js">
+                                </script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

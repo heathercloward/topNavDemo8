@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="UseCases _Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="" data-mc-has-content-body="True" data-mc-conditions="Primary.Integrate" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="OriginalFile" content="IntegrateWebAppHelp.docx" /><title>Generate Database Objects Automatically</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="Resources/Stylesheets/newDefault.css" rel="stylesheet" />
+        <script src="Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="Resources/Scripts/require.min.js">
+        </script>
+        <script src="Resources/Scripts/require.config.js">
+        </script>
+        <script src="Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="index.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Start typing to search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div id="topbar">
+                                    <div>&#160;</div>
+                                    <div id="sections_btn_holder">
+                                        <button><span id="navarrow">▼</span>
+                                        </button>
+                                    </div>
+                                    <div id="sections_panel">
+                                        <div id="components">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="topic-layout" data-sticky-container="">
+                                        <div>
+                                            <h3 class="masterpage" data-mc-conditions="Primary.Online">
+                                                <img class="topicLogo" src="Resources/Images/BOA-DSP_Logo-Components-INTEGRATE_sized.png" />
+                                            </h3>
+                                            <h2><a name="aanchor283"></a>
+                                                <MadCap:concept term="Integrate" />Generate Database Objects Automatically</h2>
+                                            <p>Use Integrate’s optional Auto Generate Database Objects feature to quickly configure process template loops, relationships, and field mappings and to create views and tables in the designated database.</p>
+                                            <p class="note"><b>NOTE</b>: The Auto Generate Database Objects feature is optional. Users can create and configure database objects manually.</p>
+                                            <p>This section provides an overview of the feature. Refer to specific use case topics describing process template loop configuration, 
+ field mappings, and relationships for more information.</p>
+                                            <p>For process template loops for all process templates, regardless of the template type, Integrate:</p>
+                                            <ul style="list-style: disc;">
+                                                <li value="1">
+                                                    <p>Populates the <b>VIEW NAME</b> column on the <i>Process Template Loop</i> page for a process template with a single loop with tx[Process Name] [Template Name]Int</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Populates the <b>VIEW NAME</b> column on the <i>Process Template Loop</i> page for a process template with multiple loops with tx[Process Name] [Template Name] [Loop Name]Int</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Creates a table for a process template with a single loop with the name tt[Process Name] {Template Name]_Upload</p>
+                                                </li>
+                                                <li value="4">
+                                                    <p>Creates tables for a process template with multiple&#160;&#160;loops with the name tt[Process Name] {Template Name] [Loop Name]_Upload</p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>Sets the <b>PRIMARY KEY COLUMN NAME</b> to ID on the <i>Process Template Loop</i> page</p>
+                                                </li>
+                                                <li value="6">
+                                                    <p>Automatically maps the fields for the process template loop. The <b>TEMPLATE FIELD UNIQUE NAME</b> and the <b>MAPPING VALUE</b> 
+	 column will have the same value on the <i>Process Template Loop Field Mappings</i> page.</p>
+                                                </li>
+                                            </ul>
+                                            <p>Additionally, for process template loops based on certain template types, Integrate:</p>
+                                            <ul style="list-style: disc;">
+                                                <li value="1">
+                                                    <p>Creates a table called tt[Process Name] {Template Name] [Loop Name]_Download for a process template based on a BAPI/RFC template</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Configures relationships for process template loops for BAPI/RFC templates and for looped templates (BDC Script and GUI Script)</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Sets the <b>DOWNLOAD PRIMARY KEY</b> column to 
+	 <b>ID</b> for a process template based on a BAPI/RFC template</p>
+                                                </li>
+                                                <li value="4">
+                                                    <p>Populates the <b>DOWNLOAD TABLE</b> column with tt[Process Name] [Template Name] [Loop Name]_Download for a process template&#160;&#160;based on a BAPI/RFC template</p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>Populates the <b>FLAT FILE OBJECT KEY</b> column with the text FlatFileObjectKey for process templates based on User Defined Delimited and Fixed Width templates</p>
+                                                </li>
+                                            </ul>
+                                            <p class="note"><b>NOTE</b>: The Flat File Object Key is a unique identifier for an object that Integrate uses to join the data stored in different tables to make a complete data set for the object. The data set has two loop levels, the header and the details. For example, Integrate uses the flat file object key of 1 in the first loop (the header) to join the header with detail records stored in tables that also have the flat file object key of 1. When posting, batch sizes are based on the number of header records as set by the flat file object key.</p>
+                                            <p class="note"><b>NOTE</b>: When creating a process that will use the Auto Generate Database Objects feature, do not select a <b>View Name</b> 
+ on the <i>Process</i> page’s <i>Vertical</i> View. Refer to <a href="Create_a_Process.htm">Create a Process</a> for more information.</p>
+                                            <p class="note"><b>NOTE</b>: Deleting a process that has auto generated database objects will also delete those tables and views from the database.</p>
+                                            <p>To use the Auto Generate Database Objects feature:</p>
+                                            <ol>
+                                                <li style="font-family: Arial, sans-serif;" value="1">Select 
+ <b>Categories</b> in <i>Navigation pane</i>.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="2">Click the <b>Processes</b> icon for a category.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="3">Click the <b>Templates</b> icon for a process.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="4">Click the <b>Loops</b> icon for a process template.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="5">
+                                                    <p>Click 
+ <b>AutoGenerate Database Objects</b> on the Page toolbar; a confirmation message displays.</p>
+                                                    <p class="NOTE" style="font-family: Arial, sans-serif;"><b>NOTE</b>: <b>Auto Generate Database Objects</b> create stables in the data source mapped to the process to serve as data staging for Upload and return value targets. 
+ It will also create Upload views based on the data staging tables. The created objects will be auto registered to the Process Template Loops. 
+ Auto Generating Database Objects will drop and re-create previously auto created objects.</p>
+                                                </li>
+                                                <li style="font-family: Arial, sans-serif;" value="6">Click 
+ <b>Ok.</b></li>
+                                                <li style="font-family: Arial, sans-serif;" value="7">View the updates to the columns on the <i>Process Template Loop</i> page.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="8">Click 
+ <b>Relationships</b> on the Page toolbar if the process template is based on a BAPI/RFC template or a BDC Script or GUI Script template that has looping enabled to view the relationships.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="9">Navigate to the <i>Process Template Loop</i> page.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="10">Click the <b>Field Mappings</b> icon for a loop.</li>
+                                                <li style="font-family: Arial, sans-serif;" value="11">Verify that the <b>MAPPING VALUE</b> column is complete for all records. The 
+ <b>MAPPING VALUE</b> and the <b>TEMPLATE FIELD UNIQUE NAME</b> should be identical.</li>
+                                            </ol>
+                                            <div id="feedback-survey">
+                                                <div class="feedback-question">
+                                                    <p class="feedback-question">Was this article helpful?</p>
+                                                    <button class="feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>
+                                                    <button class="feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button>
+                                                </div>
+                                                <div class="feedback-reason no">
+                                                    <div>
+                                                        <p class="feedbackW">Sorry about that.</p>
+                                                        <p>Why wasn't this helpful? (check all that apply)</p>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                            <label for="option1">Couldn't find what I was looking for</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                            <label for="option2">Instructions wrong or confusing.</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option3" value="Not Enough Content" data-analytics-label="Not Enough content" />
+                                                            <label for="option3">Needs more content.</label>
+                                                        </div>
+                                                        <div class="feedback-reason no-thanks">
+                                                            <p class="feedback-question"><b>Thanks for your feedback.</b>
+                                                            </p>
+                                                            <p class="feedbackW">Want to tell us more?</p>
+                                                            <p>Send an email to our authors to leave your feedback.</p>
+                                                            <p><a href="mailto:Helpfeedback@boaweb.com?subject=Feedback" id="feedbackEmailLink">Email us</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="feedback-reason yes-thanks">
+                                                    <p class="feedbackW">Great!
+							</p>
+                                                    <p>Thanks for your feedback.</p>
+                                                </div>
+                                            </div>
+                                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                            <div class="cta" id="feedback">
+                                                <p>
+                                                    <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+								var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+								var mailDisplay = '🖂 Send feedback about this topic'; 
+								document.write( 
+								'<a href="mailto:helpfeedback@boaweb.com' 
+								+ '?subject=' + escape(mailSubject) 
+								+ '&body=' + escape(mailBody) 
+								+ '">' + mailDisplay + '</a>' 
+							);/*]]>*/</script>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="nocontent menu _Skins_ContextMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer" id="sticky_bottom">
+                                    <div class="topicFooter">
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <h5>Get in Touch</h5>
+                                            <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                                            </p>
+                                            <p class="footer"><a href="#">Access Product Ideas Portal</a>
+                                            </p>
+                                            <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                                            </p>
+                                            <h5>Related Content</h5>
+                                            <p class="footer"><a href="glossary.htm" target="_blank">Glossary</a>
+                                            </p>
+                                            <p class="footer"><a href="When_to_request_a_new_product_license.htm">Product Licenses</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer" id="di">&#160;
+					</p>
+                                            <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <img src="Resources/Images/boa-logo-small-buffer.png" />
+                                            </p>
+                                            <p class="footer">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+					</p>
+                                            <p class="footer copyright">
+                                                <p class="footer"><span class="PrimaryCopyright Date">© 2018</span> BackOffice Associates, LLC and/or its affiliates. All rights reserved. </p>
+                                                <p class="footer">The DSP logo is a registered trademark of BackOffice Associates®. Other names appearing on the Site may be trademarks of their respective owners.</p>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/">Privacy Policy</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/trademarks/">Trademarks</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/">Terms of Use</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script type="text/javascript" src="https://www.google.com/jsapi">
+                                </script>
+                                <!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+                                <script type="text/javascript" src="Resources/Scripts/custom.js">
+                                </script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

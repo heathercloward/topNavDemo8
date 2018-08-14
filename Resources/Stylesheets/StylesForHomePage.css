@@ -1,0 +1,790 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* I'm going to try and use SMACSS to organize my styles*/
+/* ====================================================================================================*/
+/*=======================================Base Rules====================================================*/
+/* ====================================================================================================*/
+
+body
+{
+	color: #fafafa;
+}
+
+h1
+{
+	line-height: .5em;
+	font-size: 5.2em;
+	font-weight: normal;
+	letter-spacing: .15em;
+}
+
+h1.homeHeaders
+{
+	color: #ffffff;
+}
+
+h2.homeHeaders
+{
+	color: #ffffff;
+}
+
+h2
+{
+	font-size: 3.6785em;
+	font-weight: 500;
+	letter-spacing: .1em;
+}
+
+h5
+{
+	color: #003644;
+	font-size: 1em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: .8em;
+}
+
+p.footer
+{
+	color: #003644;
+	font-size: .9em;
+}
+
+/* This styles the footer text to be centered. */
+
+p.footer.bottom
+{
+	text-align: center;
+}
+
+/* This styles the footer text to be blue and not underlined. */
+
+div.homeFooter a
+{
+	text-decoration: none;
+	color: #003644;
+}
+
+/* This styles the footer text to be a lighter blue when a user hovers over it. */
+
+div.homeFooter a:hover
+{
+	color: #008fb4;
+}
+
+/*=Elements for text contained within each home-tile=*/
+
+p.tile-title
+{
+	text-align: center;
+	color: #58595b;
+	font-size: 2.5em;
+}
+
+p.tile-title > a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+p.tile-content
+{
+	text-align: center;
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+p.tile-items
+{
+	color: #7E8890;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+div.home-tiles a	/*Complex Selector: Any anchor (links) tags that are within div.home-tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #fafafa;
+}
+
+/* ====================================================================================================*/
+/* ==================================== Layout Rules ==================================================*/
+/* ====================================================================================================*/
+/* Removes padding added by browser styles and sets width to 100% so the main page takes up entire screen.*/
+
+.off-canvas-content .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+	padding-bottom: 0;
+}
+
+/*==================================Home Page Hero Section================================================*/
+/*This is the first Hero/Banner on the Home Page */
+
+div.topic-hero
+{
+	height: 20em;
+	padding-top: 1em;
+	background-color: #003f5b;
+}
+
+/* Styles the text in the topic hero section of the page. */
+
+div.topic-hero-text
+{
+	padding-top: 3em;
+	padding-bottom: 1em;
+	margin-top: 0em;
+}
+
+/* Centers text in topic hero section */
+
+.center
+{
+	text-align: center;
+}
+
+/*==========================================Home Tiles section===============================================*/
+
+div.home-tiles
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background-attachment: fixed;
+	background-position: center 0;
+	background-image: url('../Images/Assets/HeroImages/Clouds.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	/*Adds transition animation when switching between screen sizes*/
+	padding: 1em;
+	overflow: hidden;
+	background-color: #048db3;
+	background-repeat: no-repeat;
+	height: 49em;
+	border-radius: 2px;
+	max-height: 100vh;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 9.667%;
+	border: ridge 4px #003f5b;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 2%;
+	border: ridge 4px #003f5b;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 2%;
+	border: ridge 4px #003f5b;
+}
+
+/* =================================================== Footer =================================================  */
+
+div.homePageFooter
+{
+	background-color: #E0E0E0;
+	position: relative;
+}
+
+div.homeFooter	/*This is a custom responsive layout row style (div class) in your stylesheet. */
+{
+	mc-grid-row: true;
+	padding-bottom: 1rem;
+}
+
+div.homeFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.homeFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.homeFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.homeFooter > div:nth-child(1)
+{
+	width: 100%;
+	height: 1em;
+}
+
+div.homeFooter > div:nth-child(2)
+{
+	width: 13.667%;
+	margin-left: 12%;
+}
+
+div.homeFooter > div:nth-child(3)
+{
+	width: 35.333%;
+	margin-left: 2%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+	height: 14em;
+	max-width: 28em;
+	background-image: url('../Images/DI_Community-Website5.svg');
+	margin-right: 2%;
+}
+
+div.homeFooter > div:nth-child(4)
+{
+	padding-top: 1rem;
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.homeFooter > div:nth-child(5)
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-bottom: 0em;
+	border-top: dotted 0px #317598;
+	border-top-color: #3f6075;
+	border-bottom-color: #317598;
+	border-bottom: dotted 2px #317598;
+	margin-top: 0em;
+}
+
+div.homeFooter > div:nth-child(6)
+{
+	width: 25%;
+	border-top: dashed 0px #20aa97;
+	margin-top: 0em;
+	margin-left: 8%;
+}
+
+div.homeFooter > div:nth-child(7)
+{
+	width: 25%;
+	margin-left: 4%;
+	border-top: dashed 0px #20aa97;
+	margin-top: 0em;
+}
+
+div.homeFooter > div:nth-child(8)
+{
+	width: 25%;
+	margin-left: 4%;
+}
+
+/* ====================================================================================================*/
+/* ==================================== Module Rules ==================================================*/
+/* ====================================================================================================*/
+/* ================================ Logo buttons on main tiles ========================================*/
+/* The pill looking logos in the three tiles */
+
+img.HomeLogos
+{
+	margin-bottom: 1em;
+	background-color: #ffffff;
+	border-radius: .5em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .5em;
+	height: 90%;
+	width: 60%;
+}
+
+/* I created a different class for the migration logos because they are larger and needed less height and width. I also applied this to the IGUC logo. */
+/* Ultimately I think svgs would be better here and I am looking into getting that set up and it may change the need for these styles or how the images appear. */
+
+img.HomeLogos.migration
+{
+	width: 80%;
+	height: 70%;
+}
+
+img.HomeLogos:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* ==================================== Back to Top Button ============================================*/
+/* Back to top button in the bottom right corner of every page*/
+
+#myBtn
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 20px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: #4fadc6;
+	/* Set a background color */
+	color: white;
+	/* Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	font-size: 18px;
+	/* Increase font size */
+}
+
+/*========================= Learn More button on Data Insiders image in footer =====================*/
+
+.btn
+{
+	border: none;
+	/* Remove borders */
+	color: #ffffff;
+	/* Add a text color */
+	padding: 14px 28px;
+	/* Add some padding */
+	cursor: pointer;
+	/* Add a pointer cursor on mouse-over */
+	margin-left: 35%;
+	margin-top: 38%;
+	background-color: #f44336;
+}
+
+.more:hover
+{
+	background: #da190b;
+}
+
+/* ==================================== Alert Banner ==================================================*/
+/*What the back to top button looks like when user hovers over it */
+
+#myBtn:hover
+{
+	background-color: #555;
+	/* Add a dark-grey background on hover */
+}
+
+/* Alert banner on Home page that includes a link to how to search help and a contact link for describing what they were looking for and did not find */
+
+.alert
+{
+	padding: 20px;
+	background-color: #4fadc6;
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/* Since I have a style for links in general I needed a different style for the link text in the alert so that it would not look odd.*/
+
+a.alertLink
+{
+	color: #003f5b;
+	font-weight: 600;
+}
+
+/* What the link text in the alert banner looks like when a user hovers over it. I added this so that it woudl be apparent the text is link text. */
+
+a.alertLink:hover
+{
+	color: #fafafa;
+}
+
+/* This is the styling for the close button in the alert banner, which is a little x in the far right corner.*/
+
+.closebtn
+{
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* What the close button for the alert banner looks like when a user hovers over it.*/
+
+.closebtn:hover
+{
+	color: #003f5b;
+}
+
+/*=========================================Search bar elements============================================*/
+
+div.search-container
+{
+	margin-top: -10em;
+}
+
+.search-bar._Skins_SearchTopics.mc-component .search-filter:hover
+{
+	background: url("Images/FilterOutline.png") no-repeat center center, -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+}
+
+/*==========================Mad Cap proxy/editor assigned styles======================*/
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+html.home-page
+{
+	mc-community-features: disabled;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. 
+[@media tablet] declares styles that will apply when the screen is in tablet view - 1280px or less
+[@media mobile] declares styles that will apply when the screen is in mobile view - 767px or less
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	/* ====================================================================================================*/
+	/*=======================================Base Rules====================================================*/
+	/* ====================================================================================================*/
+
+	p.tile-title
+	{
+		font-size: 2.5em;
+	}
+
+	p.info-title
+	{
+		font-size: 2em;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	p.footer
+	{
+		font-size: .7em;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Layout Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* This style removes padding from the main content section of the page in tablet view. */
+
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+	/*  This style moves the hamburger icon over to the left away from the far edge of the layout in tablet view.  */
+
+	.title-bar .menu-icon span
+	{
+		margin-right: 3em;
+	}
+
+	/* When in tablet mode the home tiles need to be closer together, the following styles create that effect.  */
+
+	div.home-tiles > div
+	{
+		padding: 0px 0px;
+		max-height: 52vh;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	/* The footer also needs to be closer together in tablet view so the following styles create that look.  */
+
+	div.homePageFooter
+	{
+		position: relative;
+	}
+
+	div.homeFooter > div:nth-child(1)
+	{
+		width: 100%;
+		height: 1em;
+	}
+
+	div.homeFooter > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 4%;
+		max-height: 16em;
+		margin-right: 1%;
+	}
+
+	div.homeFooter > div:nth-child(3)
+	{
+		width: 44%;
+		margin-top: 1em;
+		max-width: 20em;
+		height: 11em;
+	}
+
+	div.homeFooter > div:nth-child(4)
+	{
+		width: 28%;
+		margin-left: 1%;
+	}
+
+	div.homeFooter > div:nth-child(5)
+	{
+		margin-top: 0em;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Module Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* This style styles the learn more button on the Data Insiders image in the footer. */
+
+	.btn
+	{
+		margin-left: 29%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	/* ====================================================================================================*/
+	/*=======================================Base Rules====================================================*/
+	/* ====================================================================================================*/
+
+	h1
+	{
+		font-size: 3em;
+		letter-spacing: 0;
+	}
+
+	h2
+	{
+		font-size: 2.5em;
+		font-weight: 500;
+		letter-spacing: 0;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	p.tile-title
+	{
+		font-size: 2.5em;
+	}
+
+	p.info-title
+	{
+		font-size: 3em;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	p.footer
+	{
+		font-size: .9em;
+	}
+
+	div.cta
+	{
+		margin-left: .1em;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Layout Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* This style adds padding to the main content section of the page in mobile view. */
+
+	div.topic-hero
+	{
+		height: 16em;
+	}
+
+	div.topic-hero-text
+	{
+		padding-top: 3em;
+	}
+
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	/* When in mobile mode the home tiles need to be a single column, the following styles create that effect.  */
+
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+		padding: 0;
+		max-height: 100vh;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: auto;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: auto;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: auto;
+	}
+
+	/* The footer also needs to be a single column in mobile view so the following styles create that look.  */
+
+	div.homeFooter
+	{
+		text-align: center;
+	}
+
+	div.homeFooter > div:nth-child(1)
+	{
+		width: 100%;
+		height: 1em;
+	}
+
+	div.homeFooter > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0;
+		max-height: 17em;
+		margin-right: 2%;
+	}
+
+	div.homeFooter > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 2%;
+		margin-left: 0;
+		height: 13em;
+		max-width: 26em;
+	}
+
+	div.homeFooter > div:nth-child(4)
+	{
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-left: 0;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Module Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* This style styles the learn more button on the Data Insiders image in the footer. */
+
+	.btn
+	{
+		margin-left: 2%;
+	}
+
+	/* This images center aligns the BackOffice logo in the footer in mobile view. */
+
+	div.homeFooter > img
+	{
+		text-align: center;
+	}
+}
+

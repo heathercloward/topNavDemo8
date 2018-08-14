@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="PageDescriptions _Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="" data-mc-has-content-body="True" data-mc-conditions="Primary.AutoGen" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Automation SQL Field Mappings H</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/newDefault.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="Resources/TableStylesheets/fielddescription.css" rel="stylesheet" />
+        <script src="Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="Resources/Scripts/require.min.js">
+        </script>
+        <script src="Resources/Scripts/require.config.js">
+        </script>
+        <script src="Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="index.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Start typing to search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div id="topbar">
+                                    <div id="sections_btn_holder">
+                                        <button><span id="navarrow">▼</span>
+                                        </button>
+                                    </div>
+                                    <div id="sections_panel">
+                                        <div id="components">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="topic-layout" data-sticky-container="">
+                                        <div>
+                                            <h3 class="masterpage" data-mc-conditions="Primary.Online">
+                                                <img class="topicLogo" src="Resources/Images/dspMigrate_Logo-Components-AUTOGEN_sized.png" />
+                                            </h3>
+                                            <h2>Automation SQL Field Mappings H</h2>
+                                            <p><a href="#Automation_SQL_Field_Mappings_V">Automation SQL Field Mappings V</a>
+                                            </p>
+                                            <p>Use this page to:</p>
+                                            <ul>
+                                                <li value="1"><a href="Create_Rules_Using_SQL_Automation.htm" name="aanchor2061">Create Rules Using SQL AutoGen</a>
+                                                </li>
+                                                <li value="2"><a href="Reset_A_Mapping_in_SQL_Automation.htm">Reset A Mapping in SQL AutoGen</a>
+                                                </li>
+                                            </ul>
+                                            <p style="font-size: 11pt;">To access this page:</p>
+                                            <ol>
+                                                <li value="1">Click the&#160;<b>Automation</b>&#160;tab on the Quick Panel.</li>
+                                                <li value="2">Click&#160;the <b>Mappings</b>&#160;icon for an Object.</li>
+                                            </ol>
+                                            <table class="TableStyle-basictable" cellspacing="0" style="mc-table-style: url('Resources/TableStylesheets/fielddescription.css');">
+                                                <col class="TableStyle-basictable-Column-Column1" />
+                                                <col class="TableStyle-basictable-Column-Column2" />
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Field</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableColumn">Description</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Create and Complete</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Click to build a view and a stored procedure for the selected field mapping in the object database. The rule is automatically registered in Transform.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> Rules can be created for one mapping at a time.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> After the user clicks this icon, the Rule Status is set to Complete.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the target is in a Design Status of Inactive or Complete, this icon is disabled.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Reset</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Click to clear the Mapping Status and Rule Status for the selected field mapping on the <i><a href="Field_Mappings_H.htm">Field Mappings</a></i> page in Map. This process allows the mapper to remap the field.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> When a user clicks Reset, the Created By field on the Vertical View of the Field Mappings page is updated to display the user name of the user who clicked Reset. The Created On field, on the Vertical View of the Field Mappings page, is updated to reflect the date of the reset.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> Rules can be reset for one mapping at a time.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> The Reset Field Mapping parameter set in Console on the <i><a href="Parameters.htm">Parameters</a></i> page controls how a mapping is updated when it is reset. Options are:</p>
+                                                        <ul>
+                                                            <li value="1"><b>Reset all Field Mapping Fields</b> – All fields are cleared of values
+                    
+                    <p class="TableNote"><b>NOTE:</b> If the mapping is associated with a field group other than the default field group (* or “All”), the Target Relationship ID field is not updated on a reset.</p></li>
+                                                            <li value="2"><b>Reset Status Fields only</b> – All fields retain values except for the Mapping Status and Rule Status, which are set to Pending Review.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Reject</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Click to reject the selected mapping(s).</p>
+                                                        <p class="TableText">If the mapping action is Rule or RuleXref, 
+		 the Rule SQL field must also have beencompleted with the correct SQL for the rule in the rule comment field.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the target is in a Design Status of Inactive or Complete, this icon is disabled. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Review Mappings</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Click to open the <i><a href="Field_Mappings_H.htm">Field Mappings</a></i> page in Map for the selected mapping.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">METRIC GROUP  </p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the name of the Metric Group added in Target Design Metric groups are a category of field groups that organize and prioritize fields in field groups for mapping. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">FIELD GROUP  </p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the name of the field group to which the field belongs. All fields are assigned to the default field group (*). Field groups are used to organize data to be able to apply different rules, criticality levels, 
+		 requirements settings against each group depending on the values of data in a related field.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">PRIORITY</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the order that fields should be mapped, and the order that fields display on the <i><a href="Field_Mappings_H.htm">Field Mappings</a></i> page in Map. 
+		 Field priority is set on the <span style="font-style: italic;"><a href="Target_Fields_H_Target_Design.htm">Target Fields</a></span> 
+		 page in Target Design in the Field Order field.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">TARGET FIELD  </p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the name of the target and field selected on the <i><a href="Field_Mappings_H.htm">Field Mappings</a></i>page. The second line will display the description of the field enter in Target Design. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">SOURCE DETAILS</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the source system name and the Add Row source. </p>
+                                                        <p class="TableText">If the Source System says “SELECT SOURCE,” 
+		 no source has been selected. If it says “{Target Rules},” the rule is a target rule.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the target field is a key field on the target table, a key icon displays to the right of the field name.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn"><a href="Popup_Mapping_Actions.htm" class="MCTopic MCTopicPopupHotSpot a">ACTION</a>
+                                                        </p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays action used to map the field, such as Copy, Default, or Rule.</p>
+                                                        <p class="TableText">Values are:</p>
+                                                        <ul>
+                                                            <li value="1">Construction</li>
+                                                            <li value="2">Copy</li>
+                                                            <li value="3">Default</li>
+                                                            <li value="4">Internal</li>
+                                                            <li value="5">Manual Rule</li>
+                                                            <li value="6">Manual Construction</li>
+                                                            <li value="7">Not Used</li>
+                                                            <li value="8">Rule</li>
+                                                            <li value="9">Rule Xref</li>
+                                                            <li value="10">Xref</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">LOOKUP</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the name of the lookup table created in Target Design. Lookup tables can be viewed for mappings with any action. In AutoGen, 
+		 lookup tables are used with mappings that have an action of RuleXref and Rule.  </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">SOURCE TABLE</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays source table used for Copy, RuleXref, Xref or Construction actions.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> When mapping a source, this field displays the Add Row and Update Row sources for the Add Row source only. When mapping a target, the field displays any target in the Wave and Process Area. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">RULES COMMENT  </p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays technical information entered by the Mapper to help the Developer build the rule when the action for the mapping is Manual Rule. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">SOURCE FIELD</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays source field used for Copy, RuleXref, Xref or Construction actions.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">DEFAULT VALUE</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays data used in the default rule creation process (for example, when ACTION is set to Default). 
+		 For actions other than Default, this field is &lt;Blank&gt;. Enter 
+		 &lt;Blank&gt; to indicate the field does not have a default value. 
+		 The value will be automatically set to a space (' '). </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">RULE SQL</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the SQL for the rule entered on the Mapping Approvals page. A developer must enter SQL when rejecting a mapping that has a Manual, Rule or RuleXref action. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">CREATED ON</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays date and time when a user clicked the Create and Complete icon on this page or the Create and Approve Rules icon on the <a href="Automation_page.htm" style="font-style: italic;">Automation</a> 
+		 page to create the rules for the approved mapping. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">CREATED BY</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the user ID of the user who clicked the Create and Complete icon on this page or the Create and Approve icon on the <a href="Automation_page.htm" style="font-style: italic;">Automation</a> 
+		 page.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">MAPPING STATUS</p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays an icon that represent&#160;the 
+		 <a href="Popup Mapping_Status.htm" class="MCTopic MCTopicPopupHotSpot a">Mapping Status</a> of the field in the mapping process. </p>
+                                                        <ul>
+                                                            <li value="1">A red icon indicates a Mapping Status of Pending Review. </li>
+                                                            <li value="2">A yellow icon represents Design Required. </li>
+                                                            <li value="3">A green icon is Complete.</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="197" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">RULE STATUS  </p>
+                                                    </td>
+                                                    <td width="429" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays an icon representing the <a href="Popup Rule_Status.htm" class="MCTopic MCTopicPopupHotSpot a">Rule Status</a> of the rule to be built from the mapping once it is complete. </p>
+                                                        <ul>
+                                                            <li value="1">A red icon indicates a Rule Status of Pending Review. </li>
+                                                            <li value="2">A yellow icon represents Revision Requested or that the associated mapping has been submitted and is waiting for Developer review. </li>
+                                                            <li value="3">A green icon is Complete. </li>
+                                                        </ul>
+                                                        <p class="TableText">Rule status can be updated. Refer to <a href="Update_a_Rule_Status_in_SQL_Automation.htm">Update a Rule Status in SQL AutoGen</a> for more information. &#160;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="199" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Log</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Click to open the AutoGen SQL Log page and view successful or failed AutoGen tasks.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the icon is disabled, no source tables, target tables or rules have been generated for the selected object.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <h2><a name="Automation_SQL_Field_Mappings_V"></a>Automation SQL Field Mappings V</h2>
+                                            <p><a href="#" class="selected">Automation SQL Field Mappings H</a>
+                                            </p>
+                                            <h3>General</h3>
+                                            <table class="TableStyle-basictable" cellspacing="0" style="mc-table-style: url('Resources/TableStylesheets/fielddescription.css');">
+                                                <col class="TableStyle-basictable-Column-Column1" />
+                                                <col class="TableStyle-basictable-Column-Column2" />
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Field</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableColumn">Description</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Reject</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Click to reject the selected mapping(s).</p>
+                                                        <p class="TableText">If the mapping action is Rule or RuleXref, 
+		 the Rule SQL field must also have beencompleted with the correct SQL for the rule in the RULE COMMENT field.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the target is in a Design Status of Inactive or Complete, this icon is disabled. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td colspan="2" width="196" class="TableStyle-basictable-BodyD-Column1-Body1">
+                                                        <p class="TableColumn">Status</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Mapping Status</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the <a href="Popup Mapping_Status.htm" class="MCTopic MCTopicPopupHotSpot a">Mapping Status</a> of the field in the mapping process. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Rule Status</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the <a href="Popup Rule_Status.htm" class="MCTopic MCTopicPopupHotSpot a">Rule Status</a> of the rule to be built from the mapping once it is complete. </p>
+                                                        <p class="TableText">Rule status can be updated in SQL AutoGen on this &#160;page. Refer to <a href="Update_a_Rule_Status_in_SQL_Automation.htm">Update a Rule Status in SQL AutoGen</a> for more information. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td colspan="2" width="196" class="TableStyle-basictable-BodyD-Column1-Body1">
+                                                        <p class="TableColumn">Mapping</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Source</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays name of the source used in field mapping. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Lookup</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the name of the lookup table created in Target Design. Lookup tables can be viewed for mappings with any action. In AutoGen, 
+		 lookup tables are used with mappings that have an action of RuleXref and Rule.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Target Relationship ID</p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the name of the table that is joined to the current table in a relationship. </p>
+                                                        <p class="TableText">Relationships join Add Row and Update Row sources. If the field is blank, then the target for the selected mapping is not joined to another target. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Instruction 
+		 </p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the system-generated summary about the field mapping. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Additional Notes </p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays user-entered notes about the mapping.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td colspan="2" width="196" class="TableStyle-basictable-BodyD-Column1-Body1">
+                                                        <p class="TableColumn">Rule Details  </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="626" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Auto Generate Rule </p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">If checked, the rule for the field mapping is generated when the user clicks the Create and Complete icon on the <span style="font-style: italic;">Horizontal</span> View. 
+		 </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td width="196" class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Rule Name </p>
+                                                    </td>
+                                                    <td width="430" class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="MsoNormal" style="margin-top: 5.0pt;margin-right: 0in;margin-bottom: 5.0pt;margin-left: 5.0pt;">Displays the rule name of the rule to be autogenerated.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> Rule names must follow naming conventions. Refer to <a href="Naming_Conventions.htm">Naming Convention</a>s for more information. </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>&#160;</p>
+                                            <h3>Audit Information</h3>
+                                            <table class="TableStyle-basictable" cellspacing="0" style="mc-table-style: url('Resources/TableStylesheets/fielddescription.css');">
+                                                <col class="TableStyle-basictable-Column-Column1" />
+                                                <col class="TableStyle-basictable-Column-Column2" />
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Field</p>
+                                                    </td>
+                                                    <th class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableColumn" style="text-align: left;">Description</p>
+                                                    </th>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td colspan="2" class="TableStyle-basictable-BodyD-Column1-Body1">
+                                                        <p class="TableText" style="font-weight: bold;">Tracking</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Mapped By</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays user ID of individual who selected Complete in the Mapping Status list box on the <i><a href="Field_Mappings_H.htm">Field Mappings</a></i> page in Map.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Mapped On</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays date and time when field mapping completed, for example, when the MAPPING STATUS field was set to Complete on the Field Mappings page in Map.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Submitted By  </p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays user ID of individual who clicked Submit for the mapping on the <span style="font-style: italic;"><a href="Field_Mappings_H.htm">Field Mappings</a></span> page. The mapping can then be approved or rejected on the <span style="font-style: italic;"><a href="Mapping_Approval_H.htm">Mapping Approval</a></span> page. 
+		 </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Submitted On  </p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays date and time when the user clicked Submit for the mapping on the <i>Field Mappings</i> page. </p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Created By</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays user ID of individual who clicked the Create and Approve Rules icon on the <span style="font-style: italic;"><a href="Automation_page.htm">Automation</a></span> page or the Create and Complete icon on this page &#160;to create the rules for the approved mapping.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Created On</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays date and time when a user clicked&#160;the Create and Approve Rules icon on the <span style="font-style: italic;"><a href="Automation_page.htm">Automation</a></span> page or the Create and Complete icon on this page &#160;to create the rules for the approved mapping.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Approved By</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the user ID of the user who approved the rule on the Create and Approve Rules icon on the <span style="font-style: italic;"><a href="Automation_page.htm">Automation</a></span> page</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the rule has not been approved this field is blank. Rules do not need to be approved to be autogenerated.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Approved On</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays date and time when rule was approved on the <span style="font-style: italic;"><a href="Mapping_Approval_H.htm">Mapping Approval</a></span> page.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the rule has not been approved this field is blank. Rules do not need to be approved to be autogenerated.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Rejected By</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays the user ID of the user who rejected the rule on the <span style="font-style: italic;"><a href="Mapping_Approval_H.htm">Mapping Approval</a></span> page or on this page.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the rule has not been rejected this field is blank. Rules do not need to be reviewed to be autogenerated.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-basictable-Body-Body1">
+                                                    <td class="TableStyle-basictable-BodyE-Column1-Body1">
+                                                        <p class="TableColumn">Rejected On</p>
+                                                    </td>
+                                                    <td class="TableStyle-basictable-BodyD-Column2-Body1">
+                                                        <p class="TableText">Displays date and time when rule was rejected on the <span style="font-style: italic;"><a href="Mapping_Approval_H.htm">Mapping Approval</a></span> 
+		 page or on this page.</p>
+                                                        <p class="TableNote"><b>NOTE:</b> If the rule has not been rejected this field is blank. Rules do not need to be reviewed to be autogenerated.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>&#160;</p>
+                                            <div id="feedback-survey">
+                                                <div class="feedback-question">
+                                                    <p class="feedback-question">Was this article helpful?</p>
+                                                    <button class="feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>
+                                                    <button class="feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button>
+                                                </div>
+                                                <div class="feedback-reason no">
+                                                    <div>
+                                                        <p class="feedbackW">Sorry about that.</p>
+                                                        <p>Why wasn't this helpful? (check all that apply)</p>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                            <label for="option1">Couldn't find what I was looking for</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                            <label for="option2">Instructions wrong or confusing.</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option3" value="Not Enough Content" data-analytics-label="Not Enough content" />
+                                                            <label for="option3">Needs more content.</label>
+                                                        </div>
+                                                        <div class="feedback-reason no-thanks">
+                                                            <p class="feedback-question"><b>Thanks for your feedback.</b>
+                                                            </p>
+                                                            <p class="feedbackW">Want to tell us more?</p>
+                                                            <p>Send an email to our authors to leave your feedback.</p>
+                                                            <p><a href="mailto:Helpfeedback@boaweb.com?subject=Feedback" id="feedbackEmailLink">Email us</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="feedback-reason yes-thanks">
+                                                    <p class="feedbackW">Great!
+							</p>
+                                                    <p>Thanks for your feedback.</p>
+                                                </div>
+                                            </div>
+                                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                            <div class="cta" id="feedback">
+                                                <p>
+                                                    <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+								var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+								var mailDisplay = '🖂 Send feedback about this topic'; 
+								document.write( 
+								'<a href="mailto:helpfeedback@boaweb.com' 
+								+ '?subject=' + escape(mailSubject) 
+								+ '&body=' + escape(mailBody) 
+								+ '">' + mailDisplay + '</a>' 
+							);/*]]>*/</script>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="nocontent menu _Skins_ContextMenu mc-component" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer" id="sticky_bottom">
+                                    <div class="topicFooter">
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <h5>Get in Touch</h5>
+                                            <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                                            </p>
+                                            <p class="footer"><a href="#">Access Product Ideas Portal</a>
+                                            </p>
+                                            <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                                            </p>
+                                            <h5>Related Content</h5>
+                                            <p class="footer"><a href="glossary.htm" target="_blank">Glossary</a>
+                                            </p>
+                                            <p class="footer"><a href="When_to_request_a_new_product_license.htm">Product Licenses</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer" id="di">&#160;
+					</p>
+                                            <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <img src="Resources/Images/boa-logo-small-buffer.png" />
+                                            </p>
+                                            <p class="footer copyright">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+					</p>
+                                            <p class="footer copyright">
+                                                <p class="footer"><span class="PrimaryCopyright Date">© 2018</span> BackOffice Associates, LLC and/or its affiliates. All rights reserved. </p>
+                                                <p class="footer">The DSP logo is a registered trademark of BackOffice Associates®. Other names appearing on the Site may be trademarks of their respective owners.</p>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/" target="_blank">Privacy Policy</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/trademarks/" target="_blank">Trademarks</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/" target="_blank">Terms of Use</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script type="text/javascript" src="https://www.google.com/jsapi">
+                                </script>
+                                <!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+                                <script type="text/javascript" src="Resources/Scripts/custom.js">
+                                </script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

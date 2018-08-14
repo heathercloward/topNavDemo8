@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div id="topbar">
+            <div id="sections_btn_holder">
+                <button><span id="navarrow">▼</span>
+                </button>
+            </div>
+            <div id="sections_panel">
+                <div id="components">
+                    <MadCap:menuProxy style="mc-toc-depth: 2;mc-context-sensitive: False;mc-include-parent: False;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenu.flskn" mc-linked-toc="/Project/TOCs/UseCases.fltoc" />
+                </div>
+            </div>
+        </div>
+        <div class="alert"><span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+			Can't find what you were looking for? Try these <a class="alertLink" href="../../Online Help Search Tips.htm">tips</a> or <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Search Term not Found'; 
+				var mailBody    = 'Please let us know what you were searching for. '; 
+				var mailDisplay = '🖂 Contact the Documentation Team.'; 
+				document.write( 
+				'<a class="alertLink" href="mailto:helpfeedback@boaweb.com' 
+				+ '?subject=' + escape(mailSubject) 
+				+ '&body=' + escape(mailBody) 
+				+ '">' + mailDisplay + '</a>' 
+			);/*]]>*/</script></div>
+        <div id="contentBody" class="off-canvas-main">
+            <MadCap:bodyProxy />
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div class="homePageFooter">
+                <div class="homeFooter">
+                    <div>
+                        <p>&#160;</p>
+                    </div>
+                    <div>
+                        <h5>Get in Touch</h5>
+                        <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                        </p>
+                        <p class="footer"><a href="#">Access Product Ideas Portal</a>
+                        </p>
+                        <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                        </p>
+                        <h5>Related Content</h5>
+                        <p class="footer"><a href="../../glossary.htm" target="_blank">Glossary</a>
+                        </p>
+                        <p class="footer"><a href="../../When_to_request_a_new_product_license.htm">Product Licenses</a>
+                        </p>
+                    </div>
+                    <div>
+                        <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                        </button>
+                    </div>
+                    <div>
+                        <img src="../Images/Assets/PlaceholderLogo/BOA_Logo-223x50-Blue.png" />
+                        <p class="footer copyright">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+						</p>
+                        <p>
+                            <MadCap:snippetBlock src="../Snippets/CopyrightFooter.flsnp" />
+                        </p>
+                    </div>
+                    <div>
+                        <p> </p>
+                    </div>
+                    <div>
+                        <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/" target="_blank">Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="footer bottom"><a href="http://www.boaweb.com/trademarksy/" target="_blank">Trademarks</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/" target="_blank">Terms of Use</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      
+		<!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+		<script type="text/javascript" src="../Scripts/custom.js"></script>
+    </body>
+</html>

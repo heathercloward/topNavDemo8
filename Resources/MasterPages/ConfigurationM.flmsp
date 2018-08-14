@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="topbar">
+            <div id="sections_btn_holder">
+                <button><span id="navarrow">▼</span>
+                </button>
+            </div>
+            <div id="sections_panel">
+                <div id="components">
+                    <MadCap:menuProxy style="mc-toc-depth: 2;mc-context-sensitive: False;mc-include-parent: False;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenu.flskn" mc-linked-toc="/Project/TOCs/UseCases.fltoc" />
+                </div>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="topic-layout" data-sticky-container="">
+                <div>
+                    <MadCap:bodyProxy />
+                    <div id="feedback-survey">
+                        <div class="feedback-question">
+                            <p class="feedback-question">Was this article helpful?</p>
+                            <button class="feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>
+                            <button class="feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button>
+                        </div>
+                        <div class="feedback-reason no">
+                            <div>
+                                <p class="feedbackW">Sorry about that.</p>
+                                <p>Why wasn't this helpful? (check all that apply)</p>
+                                <div class="feedback-option">
+                                    <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                    <label for="option1">Couldn't find what I was looking for</label>
+                                </div>
+                                <div class="feedback-option">
+                                    <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                    <label for="option2">Instructions wrong or confusing.</label>
+                                </div>
+                                <div class="feedback-option">
+                                    <input type="checkbox" class="option no" id="option3" value="Not Enough Content" data-analytics-label="Not Enough content" />
+                                    <label for="option3">Needs more content.</label>
+                                </div>
+                                <div class="feedback-reason no-thanks">
+                                    <p class="feedback-question"><b>Thanks for your feedback.</b>
+                                    </p>
+                                    <p class="feedbackW">Want to tell us more?</p>
+                                    <p>Send an email to our authors to leave your feedback.</p>
+                                    <p><a href="mailto:Helpfeedback@boaweb.com?subject=Feedback" id="feedbackEmailLink">Email us</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-reason yes-thanks">
+                            <p class="feedbackW">Great!
+							</p>
+                            <p>Thanks for your feedback.</p>
+                        </div>
+                    </div>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                    <div class="cta" id="feedback">
+                        <p>
+                            <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+								var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+								var mailDisplay = '🖂 Send feedback about this topic'; 
+								document.write( 
+								'<a href="mailto:helpfeedback@boaweb.com' 
+								+ '?subject=' + escape(mailSubject) 
+								+ '&body=' + escape(mailBody) 
+								+ '">' + mailDisplay + '</a>' 
+							);/*]]>*/</script>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <MadCap:menuProxy data-mc-skin="/Project/Skins/ContextMenu.flskn" style="mc-toc-depth: 2;mc-context-sensitive: False;mc-include-parent: False;mc-include-siblings: True;mc-include-children: True;" mc-linked-toc="/Project/TOCs/Configuration.fltoc" />
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="sticky_bottom">
+            <div class="topicFooter">
+                <div>
+                    <p>&#160;</p>
+                </div>
+                <div>
+                    <h5>Get in Touch</h5>
+                    <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                    </p>
+                    <p class="footer"><a href="#">Access Product Ideas Portal</a>
+                    </p>
+                    <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                    </p>
+                    <h5>Related Content</h5>
+                    <p class="footer"><a href="../../glossary.htm" target="_blank">Glossary</a>
+                    </p>
+                    <p class="footer"><a href="../../When_to_request_a_new_product_license.htm">Product Licenses</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="footer" id="di">&#160;
+					</p>
+                    <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                    </button>
+                </div>
+                <div>
+                    <p>
+                        <img src="../Images/boa-logo-small-buffer.png" />
+                    </p>
+                    <p class="footer copyright">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+					</p>
+                    <p class="footer copyright">
+                        <MadCap:snippetBlock src="../Snippets/CopyrightFooter.flsnp" />
+                    </p>
+                </div>
+                <div>
+                    <p>&#160;</p>
+                </div>
+                <div>
+                    <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/" target="_blank">Privacy Policy</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="footer bottom"><a href="http://www.boaweb.com/trademarks/" target="_blank">Trademarks</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/" target="_blank">Terms of Use</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/javascript" src="https://www.google.com/jsapi">
+        </script>
+        <!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+        <script type="text/javascript" src="../Scripts/custom.js">
+        </script>
+    </body>
+</html>

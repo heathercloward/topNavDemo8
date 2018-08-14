@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="UseCases _Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="" data-mc-has-content-body="True" data-mc-conditions="Primary.Integrate" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="OriginalFile" content="IntegrateWebAppHelp2import.docx" /><title>Post a Process with Multiple Templates</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="Resources/Stylesheets/newDefault.css" rel="stylesheet" />
+        <script src="Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="Resources/Scripts/require.min.js">
+        </script>
+        <script src="Resources/Scripts/require.config.js">
+        </script>
+        <script src="Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="index.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Start typing to search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container" data-mc-content-body="True">
+                                <div id="topbar">
+                                    <div>&#160;</div>
+                                    <div id="sections_btn_holder">
+                                        <button><span id="navarrow">▼</span>
+                                        </button>
+                                    </div>
+                                    <div id="sections_panel">
+                                        <div id="components">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="topic-layout" data-sticky-container="">
+                                        <div>
+                                            <h3 class="masterpage" data-mc-conditions="Primary.Online">
+                                                <img class="topicLogo" src="Resources/Images/BOA-DSP_Logo-Components-INTEGRATE_sized.png" />
+                                            </h3>
+                                            <h1>Post a Process with Multiple Templates</h1>
+                                            <p>A process can contain multiple templates of different template types.&#160;&#160;A multi-template process must use a <b style="font-weight: normal;">Post Execution Method</b> of <b style="font-weight: normal;">Synchronous</b> 
+ (set on the <i>Process</i> page’s <i>Vertical</i> View on the <b style="font-weight: normal;">Advanced</b> 
+ tab). BDC Script, GUI Script, and BAPI/RFC templates can use the Synchronous Post Execution Method, so these are the only template types that can be assigned to a multiple template process.</p>
+                                            <p>User Defined template types use the asynchronous post execution method, and cannot be assigned to a multiple template process.</p>
+                                            <p>Multiple templates in a process can use transaction stringing during the posting process. Refer to <span style="color: #0000ff;"><a href="Post_Data_Using_Transaction_Stringing.htm">Post Data Using Transaction Stringing</a> </span>for more information.</p>
+                                            <p class="note"><span style="font-weight: bold;">NOTE</span>: If a process based on a GUI script is included in a process with multiple templates, 
+ that process can only be posted in the background. Other posting methods are not available. In this case, the Post icon does not display on the 
+ <span style="font-style: italic;">Process Post</span> page’s <span style="font-style: italic;">Vertical</span> 
+ View and the Foreground Post icon does not display on the Posting tab of the <span style="font-style: italic;">Process Post</span> page’s 
+ <span style="font-style: italic;">Vertical</span> View.</p>
+                                            <p class="note"><span style="font-weight: bold;">NOTE</span>: After Post Rules can be added to run after a template in a multi-template process. 
+ These rules return data that is used as an input parameter for the next template in the process. Refer to <a href="Register_After_Post_Rules_to_a_Process_Template_Overview.htm">Register After Post Rules to a Process Template</a> for more information.</p>
+                                            <p>To post data for a process with multiple templates:</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Add templates and activate them.&#160;Refer to <a href="Create_a_Basic_Template.htm">Create a Basic Template</a> and the sections for adding each template type for more information.</p>
+                                                    <p class="note"><b>NOTE</b>: The steps for template creation and activation for templates that will be assigned to a multiple template process are identical to those for a template that will be the single template in a process.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Add a process, and add the templates to the process. Refer to <a href="Add_Templates_to_a_Process.htm">Add Templates to a Process</a> for more information.</p>
+                                                    <p class="note"><b>NOTE</b>: When adding a template, the priority set for each template determines the order the template is posted. Templates are processed in ascending priority order.</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Configure the process template loops for each template in the process.</p>
+                                                    <ul>
+                                                        <li value="1">Use the Auto Generate Database Objects feature to automatically add tables and views for the template. Refer to <a href="Generate_Database_Objects_Automatically.htm">Generate Database Objects Automatically</a> for more information.</li>
+                                                        <li value="2">Each loop must be linked to the parent loop through a relationship. Refer to <a href="ViewandConfigureRelationshipsBDC.htm">View and Configure Relationships for a Process Based on a BDC Script Template</a>, <a href="VwConfigureRelshpsGUIe.htm">View and Configure Relationships for a Process Based on a GUI Script Template</a>, 
+ <a href="ViewandConfigureFieldMappingsBAPI.htm">View and Configure Relationships for a Process Based on a BAPI</a>, and <a href="VwConfigureRshpsProcRFC.htm">View and Configure Relationships for a Process Bases on an RFC</a> for more information.</li>
+                                                    </ul>
+                                                </li>
+                                                <li value="4">Activate the process. Refer to the sections for adding each template type for more information.</li>
+                                                <li value="5">Configure the process post. Use the <b>BDC Post Method</b> of <b>StandardSAPPosting</b>. 
+ No other options are allowed for multi-template processes. Refer to <a href="Posting_Methods.htm">Posting Methods</a>, <a href="Post_Data_for_a_Process_Based_on_a_BDC_Script_Template.htm">Use a Process Post Record to Post to SAP for a Process Based on a BDC Script Template</a>, <a href="Post_Data_for_a_Process_Based_on_a_GUI_Script_Template.htm">Use a Process Post Record to Post to SAP for a Process Based on a GUI Script Template</a>, 
+ <a href="Post_Data_for_a_Process_Based_on_a_BAPI.htm">Use a Process Post to Post Data for a Process Based on a BAPI</a> or <a href="Post_Data_for_a_Process_Based_on_an_RFC.htm">Use a Process Post to Post Data for a Process Based on an RFC</a> for more information.</li>
+                                                <li value="6">
+                                                    <p><a name="aanchor764"></a>
+                                                        <MadCap:concept term="Integrate" />Set up testing scenarios for a process with multiple templates on the <b>Advanced</b> 
+ tab on the <i>Process Post Vertical</i> View to restrict the number of templates that Integrate posts. Enter the priority of the first template to include in the debug process in the <b>Start Template Priority</b> 
+ field, and the priority of the last template in the <b>End Template Priority</b> 
+ field.</p>
+                                                    <p class="note"><b>NOTE:</b> If using the <b>Create GUI Debug Script</b> 
+ option for a process with multiple templates that contains a GUI Script template, use the <b>Start Template Priority</b> and <b>End Template Priority</b> 
+ fields to restrict the posting to the GUI Script template only. For example, 
+ if a multi-template process contains a GUI Script template with a priority of 30, and the <b>Create GUI Debug Script</b> option is to be used, enter 30 in the <b>Start</b><b>Template Priority</b> and <b>End Template Priority</b> 
+ fields on the <b>Advanced</b> tab of the <i>Process Post</i> page’s <i>Vertical</i> 
+ View. When posting the process, Integrate will only post the GUI Script template, and the GUI debug script can be used on the template. Refer to <a href="Debug_a_GUI_Script_Posting.htm">Debug a GUI Script Posting</a> 
+ for more information.</p>
+                                                </li>
+                                                <li value="7">Post the data. If the posting fails, troubleshoot the errors using information on the <i>Messages</i> page or download the message file on the <i>Message File</i> page. Refer to <a href="Tips_and_Troubleshooting_Integrate.htm">Tips and Troubleshooting</a> for more information. </li>
+                                                <li value="8">Resubmit the post after correcting any errors. Click <b>Reset</b> for the process post on the <i>Process Post</i> page’s <i>Vertical</i> View on the <b>Posting</b> 
+ tab, then post the data again. Refer to <a href="Reset_and_Resubmit_a_Failed_Post.htm">Reset and Resubmit a Failed Post</a> for more information.</li>
+                                            </ol>
+                                            <p class="note"><b>NOTE</b>: After resetting a post it can be submitted again regardless of its status prior to the reset, and regardless of the reason for the failure.</p>
+                                            <div id="feedback-survey">
+                                                <div class="feedback-question">
+                                                    <p class="feedback-question">Was this article helpful?</p>
+                                                    <button class="feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>
+                                                    <button class="feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button>
+                                                </div>
+                                                <div class="feedback-reason no">
+                                                    <div>
+                                                        <p class="feedbackW">Sorry about that.</p>
+                                                        <p>Why wasn't this helpful? (check all that apply)</p>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                            <label for="option1">Couldn't find what I was looking for</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                            <label for="option2">Instructions wrong or confusing.</label>
+                                                        </div>
+                                                        <div class="feedback-option">
+                                                            <input type="checkbox" class="option no" id="option3" value="Not Enough Content" data-analytics-label="Not Enough content" />
+                                                            <label for="option3">Needs more content.</label>
+                                                        </div>
+                                                        <div class="feedback-reason no-thanks">
+                                                            <p class="feedback-question"><b>Thanks for your feedback.</b>
+                                                            </p>
+                                                            <p class="feedbackW">Want to tell us more?</p>
+                                                            <p>Send an email to our authors to leave your feedback.</p>
+                                                            <p><a href="mailto:Helpfeedback@boaweb.com?subject=Feedback" id="feedbackEmailLink">Email us</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="feedback-reason yes-thanks">
+                                                    <p class="feedbackW">Great!
+							</p>
+                                                    <p>Thanks for your feedback.</p>
+                                                </div>
+                                            </div>
+                                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                            <div class="cta" id="feedback">
+                                                <p>
+                                                    <script type="text/javascript">/*<![CDATA[*/var mailSubject = 'Online Help Feedback'; 
+								var mailBody    = 'Please let us know how to improve this topic. Please do not edit the link. ' + location.href; 
+								var mailDisplay = '🖂 Send feedback about this topic'; 
+								document.write( 
+								'<a href="mailto:helpfeedback@boaweb.com' 
+								+ '?subject=' + escape(mailSubject) 
+								+ '&body=' + escape(mailBody) 
+								+ '">' + mailDisplay + '</a>' 
+							);/*]]>*/</script>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="nocontent menu _Skins_ContextMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/UseCases.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="False" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer" id="sticky_bottom">
+                                    <div class="topicFooter">
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <h5>Get in Touch</h5>
+                                            <p class="footer"><a href="https://support.boaweb.com/access/unauthenticated?return_to=https%3A%2F%2Fbackofficeassociates.zendesk.com%2Fagent%2Fdashboard" target="_blank">Contact Support</a>
+                                            </p>
+                                            <p class="footer"><a href="#">Access Product Ideas Portal</a>
+                                            </p>
+                                            <p class="footer"><a href="http://www.boaweb.com/customers/product-training/" target="_blank">Request Product Training</a>
+                                            </p>
+                                            <h5>Related Content</h5>
+                                            <p class="footer"><a href="glossary.htm" target="_blank">Glossary</a>
+                                            </p>
+                                            <p class="footer"><a href="When_to_request_a_new_product_license.htm">Product Licenses</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer" id="di">&#160;
+					</p>
+                                            <button class="btn more"><a href="http://www.boaweb.com/customers/data-insiders/" target="_blank">Learn More</a>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <img src="Resources/Images/boa-logo-small-buffer.png" />
+                                            </p>
+                                            <p class="footer">**Access to pages and visibility of fields may be restricted based on the security settings of the current user.
+					</p>
+                                            <p class="footer copyright">
+                                                <p class="footer"><span class="PrimaryCopyright Date">© 2018</span> BackOffice Associates, LLC and/or its affiliates. All rights reserved. </p>
+                                                <p class="footer">The DSP logo is a registered trademark of BackOffice Associates®. Other names appearing on the Site may be trademarks of their respective owners.</p>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/privacy-policy/">Privacy Policy</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/trademarks/">Trademarks</a>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="footer bottom"><a href="http://www.boaweb.com/terms-of-use/">Terms of Use</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script type="text/javascript" src="https://www.google.com/jsapi">
+                                </script>
+                                <!-- Scripts for feedback widget, google analytics, menu modal dropdown, and back-to-top button. -->
+                                <script type="text/javascript" src="Resources/Scripts/custom.js">
+                                </script>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

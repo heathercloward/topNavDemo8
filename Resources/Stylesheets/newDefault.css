@@ -1,0 +1,1206 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/* I'm going to try and use SMACSS to organize my styles*/
+/* ====================================================================================================*/
+/*=======================================Base Rules====================================================*/
+/* ====================================================================================================*/
+
+body
+{
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	background: #fafafa;
+}
+
+p.footer
+{
+	color: #003644;
+	font-size: .9em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+	color: #39607a;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h5
+{
+	color: #003644;
+	font-size: 1em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: .8em;
+}
+
+img.topicLogo
+{
+	float: right;
+	padding-top: .3em;
+	max-width: 24%;
+}
+
+p
+{
+	margin-top: .6em;
+	margin-bottom: .6em;
+}
+
+p.note
+{
+	text-indent: -3.5625em;
+	margin-left: 3.5625em;
+}
+
+p.noteBullet	/*notes for list bullets*/
+{
+	text-indent: -5.4375em;
+	margin-left: 5.4375em;
+}
+
+p.noteNumList
+{
+	text-indent: -6.125em;
+	margin-left: 6.125em;
+}
+
+p.TableColumn
+{
+	font-weight: bold;
+	margin: 1em;
+}
+
+p.TableText
+{
+	line-height: Normal;
+	margin: 1em;
+}
+
+p.TableNote
+{
+	line-height: Normal;
+	text-indent: -3.014em;
+	margin-left: 5.014em;
+}
+
+td p.noteBullet
+{
+	text-indent: -3.4375em;
+	margin-left: 6.4375em;
+	margin-right: 1em;
+}
+
+td li
+{
+	margin-right: 1em;
+}
+
+a
+{
+	text-decoration: none;
+	color: #024467;
+}
+
+.a:link
+{
+	color: #7babf8;
+}
+
+div.topicFooter a
+{
+	text-decoration: none;
+}
+
+div.topicFooter a:hover
+{
+	color: #008fb4;
+}
+
+ul.navigation li > a:hover
+{
+	font-weight: 800;
+}
+
+/* Updates font family for the menu items on the top nav menu. Flare for some reason keeps changing them to Arial since they are links not a li.*/
+
+ul.navigation ul a
+{
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+/* Making the menu items stand out more on the top nav menu.*/
+
+ul.navigation li > a
+{
+	font-weight: 800;
+	font-size: 1.1em;
+}
+
+img	/*Setting max-width: 100%; property makes images always fit the width of the container*/
+{
+	max-width: 100%;
+}
+
+img.thumbnail
+{
+	mc-thumbnail: popup;
+}
+
+ul.menu._Skins_ContextMenu.mc-component a
+{
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+video
+{
+	max-width: 240px;
+	border: 3px solid black;
+}
+
+video:focus
+{
+	max-width: 100%;
+}
+
+/* ====================================================================================================*/
+/* ==================================== Layout Rules ==================================================*/
+/* ====================================================================================================*/
+
+/* When I updated the font in the top nav menu to Roboto it was bigger and made the third level menus open on the side and get cut off.
+So I added some padding ont the right so the upper level menus should all appear on screen.*/
+
+.off-canvas-wrapper-inner nav.title-bar .outer-row
+{
+	padding-right: 16em;
+}
+
+/* Removes padding from around edges of main container that Flare adds. */
+
+.off-canvas-wrapper-inner .outer-row
+{
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+/* Styles the sticky top nav keeping padding on the right and left and adding some padding on the bottom. */
+
+nav.title-bar
+{
+	padding-bottom: 1em;
+	padding-left: 10%;
+	padding-right: 4%;
+}
+
+/* Adds padding to left and right side of the main part of the topic pages that includes the articles and right-side menu.*/
+
+div.row .row.collapse
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+div.topic-layout
+{
+	mc-grid-row: true;
+}
+
+div.topic-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Positioning for each of the divs in the topic layout. */
+
+div.topic-layout > div:nth-child(1)
+{
+	margin-bottom: 2rem;
+	width: 58.667%;
+	margin-left: 0%;
+}
+
+div.topic-layout > div:nth-child(2)
+{
+	width: 36.333%;
+	margin-left: 4%;
+}
+
+/* =================================================== Footer =================================================  */
+
+div.topicFooter
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1rem;
+	max-width: 100% !important;
+}
+
+div.topicFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topicFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topicFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.footer
+{
+	background-color: #E0E0E0;
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Positioning for each of the divs in the footer layout. */
+
+/* I added this empty div so that if I wanted to adjust the closeness of the text to the top of the footer
+I would only need to do it once instead of for all of the divs in the row. */
+
+div.topicFooter > div:nth-child(1)
+{
+	width: 100%;
+	padding-top: .2em;
+	height: 1em;
+}
+
+div.topicFooter > div:nth-child(2)
+{
+	width: 13.667%;
+	margin-left: 12%;
+}
+
+div.topicFooter > div:nth-child(3)
+{
+	width: 35.333%;
+	margin-left: 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+	height: 14em;
+	max-width: 28em;
+	background-image: url('../Images/DI_Community-Website5.svg');
+	margin-right: 2%;
+}
+
+div.topicFooter > div:nth-child(4)
+{
+	padding-top: 1rem;
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.topicFooter > div:nth-child(5)
+{
+	width: 100%;
+	margin-left: 0%;
+	margin-bottom: 0em;
+	border-top: dotted 0px #317598;
+	border-top-color: #3f6075;
+	border-bottom-color: #317598;
+	border-bottom: dotted 2px #317598;
+	margin-top: -1em;
+}
+
+div.topicFooter > div:nth-child(6)
+{
+	width: 25%;
+	border-top: dashed 0px #20aa97;
+	margin-top: 0em;
+	margin-left: 8%;
+}
+
+div.topicFooter > div:nth-child(7)
+{
+	width: 25%;
+	margin-left: 4%;
+	border-top: dashed 0px #20aa97;
+	margin-top: 0em;
+}
+
+div.topicFooter > div:nth-child(8)
+{
+	width: 25%;
+	margin-left: 4%;
+}
+
+div.topicFooter > div:nth-child(9)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+/* ====================================================================================================*/
+/* ==================================== Module Rules ==================================================*/
+/* ====================================================================================================*/
+/* Styling for the modal menu that opens/closes when user clicks the arrow next to the logo in the top nav header.*/
+
+div#topbar
+{
+	background: transparent;
+	position: fixed;
+	left: 11%;
+	top: 0.3em;
+	z-index: 1005;
+	width: 3em;
+	height: 5em;
+}
+
+div#topbar > #sections_btn_holder
+{
+	float: left;
+	width: 144px;
+	height: 46px;
+	padding-top: 2em;
+}
+
+/* This makes the user's cursor a pointer so that when they hover over the button area they know it is clickable.*/
+
+div#topbar > #sections_btn_holder > button
+{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+/* This is the box that holds the menu when the user clicks the arrow appears. 
+It also has the modal styling */
+
+div#topbar > #sections_panel
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 10000;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0,0,0);
+	/* Fallback color */
+	background-color: rgba(0,0,0,0.4);
+	/* Black w/ opacity */
+}
+
+/* Inner div in the modal for the menu. */
+
+div#components
+{
+	width: 22%;
+	margin-left: 11%;
+	margin-top: -2%;
+}
+
+/* Increases the size of the arrow so that it is easier to see. Since I used a unicode character I used font-size to increase it's size.*/
+
+span#navarrow
+{
+	font-size: 1.3em;
+}
+
+/* Changes the color of the arrow when users hover over it to make it more of an affordance. */
+
+span#navarrow:hover
+{
+	color: #20aa97;
+}
+
+/* feedback widget styles */
+/* Style the background of the feedback survey, making it blue with rounded edges and giving it some margin so it fits nicely on the page.*/
+
+div#feedback-survey
+{
+	margin-left: 1em;
+	background-color: #ceebff;
+	padding: 2em;
+	width: 86%;
+	border-radius: 1em;
+	padding-top: 1em;
+	margin-top: 2em;
+}
+
+/* Feedback Widget text styling. */
+
+.feedbackW
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: .4em;
+}
+
+/* Class that keeps the feedback reason options hidden until user clicks the no button. */
+
+.feedback-reason
+{
+	display: none;
+}
+
+/* Styling for the content when the user clicks the no button. */
+
+.feedback-reason.no
+{
+	padding: 1em;
+	width: 98%;
+	padding-top: .1em;
+}
+
+/* Feedback Widget text styling. */
+
+div.feedback-question
+{
+	color: #39607a;
+	font-size: 1.5em;
+}
+
+/* Styling for the feedback buttons. */
+
+button.feedback-yes
+{
+	background-color: #20aa97;
+	/* green*/
+	border: none;
+	color: #fafafa;
+	padding: 1em 2em;
+	font-size: .7em;
+	margin-left: 1em;
+}
+
+button.feedback-yes:hover
+{
+	background-color: #179080;
+	/* slightly darker green*/
+	cursor: pointer;
+}
+
+button.feedback-no
+{
+	background-color: #ee3124;
+	/* red*/
+	border: none;
+	color: #fafafa;
+	padding: 1em 2em;
+	font-size: .7em;
+	margin-left: 1em;
+}
+
+button.feedback-no:hover
+{
+	background-color: #ca2b20;
+	/* slightly darker red*/
+	cursor: pointer;
+}
+
+/* These are the styles for the 'Use this page to' section of the page descriptions. A div with a class of "use" will need to be wrapped around
+the p and ul (if there is one) in order for this to apply. */
+
+div.use
+{
+	background-color: #ceebff;
+	border-left: 6px solid #39607a;
+	padding-left: 4em;
+}
+
+div.use p
+{
+	-webkit-margin-after: -1em;
+}
+
+div.use ul
+{
+	padding-bottom: 1.5em;
+}
+
+div.use p:before
+{
+	content: "🗹";
+	font-size: 2em;
+	line-height: 2;
+	padding-right: .3em;
+	margin-left: -1.5em;
+}
+
+/* ====================================== SideMenu Skin =============================================== */
+
+/* The logo drop down uses the SideMenu Skin.
+Styles the selected item on menu differently than other items. */
+
+ul.menu._Skins_SideMenu.mc-component li > a.selected
+{
+	font-size: 1.2em;
+}
+
+/* ====================================== ContextMenu Skin =============================================== */
+
+/* The side menu in the topics uses the ContextMenu skin.
+Styles the selected item on menu differently than other items. */
+
+ul.menu._Skins_ContextMenu.mc-component li > a.selected
+{
+	font-size: 1.2em;
+	color: #048bb3;
+}
+
+/* cross-reference links */
+
+MadCap|xref
+{
+	color: #2D8DCC;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+MadCap|xref:hover
+{
+	color: #024467;
+}
+
+/* Progressive disclosure a.k.a. collapsible header - sample on Migration Overview page */
+
+MadCap|dropDownBody
+{
+	border-bottom: 1px solid #DEE2E7;
+}
+
+MadCap|dropDown	/*Change the "mc-open-image" and "mc-closed-image" properties to change the icons used in drop-downs*/
+{
+	mc-open-image: url('../Images/Assets/Icons/Arrows/arrow-down-gray.png');
+	mc-closed-image: url('../Images/Assets/Icons/Arrows/arrow-right-gray.png');
+}
+
+/* The styling for the logo in the top nav sticky header */
+
+.title-bar-layout a.logo
+{
+	background: url('../Images/Assets/PlaceholderLogo/BOA_DSP_LogoC-5405.svg') no-repeat center center !important;
+	margin: -6em;
+	background-size: 3.4em;
+	height: 4em;
+}
+
+/* Search bar styles */
+
+/* Styles the search filter button. I had to add the !important indicator to this style bc Flare was adding a style that was closer in proximity and it was overriding 
+all of my styles. I tried adding the image in the Flare interface and Flare does not recognize the svg files I was provided. */
+
+.search-bar .search-filter
+{
+	width: 55px;
+	background: #048cb3 url('../Images/Assets/Icons/MainIcons/whitefilter.svg') no-repeat center center !important;
+	background-size: 1.5em !important;
+	border-radius: 2px !important;
+}
+
+/* Keep button the same when user hovers over it. Otherwise Flare applies default styles to it. */
+
+.search-bar .search-filter:hover
+{
+	width: 55px;
+	background: #048cb3 url('../Images/Assets/Icons/MainIcons/whitefilter.svg') no-repeat center center;
+	background-size: 1.5em !important;
+	border-radius: 2px;
+}
+
+/* Styles the search submit button. Again Flare does not recognize the svg file I have for the background image so I added it in css instead of the interface. */
+
+.search-bar.search-bar-container .search-submit
+{
+	width: 55px;
+	border-radius: 2px;
+	background: #20aa97 url("../Images/Assets/Icons/MainIcons/white-magnifying-glass.svg") no-repeat center center;
+	background-size: 1.7em;
+}
+
+/* Keep button the same when user hovers over it; otherwise Flare will add some default styles. */
+
+.search-bar.search-bar-container .search-submit:hover
+{
+	width: 55px;
+	border-radius: 2px;
+	background: #20aa97 url("../Images/Assets/Icons/MainIcons/white-magnifying-glass.svg") no-repeat center center;
+	background-size: 1.7em;
+}
+
+/* Adds slightly rounded edges to search filter drop down menu */
+
+.search-filter-content
+{
+	border-radius: 2px;
+}
+
+/* Styles the search bar width and placement in the top nav */
+
+.nav-search
+{
+	width: 48%;
+	margin-left: 6em;
+	margin-top: -3.5em;
+	margin-bottom: 1em;
+	padding-top: .6em;
+}
+
+/*Call to action button/Contact Support button*/
+
+div.cta
+{
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	padding: .1em 1em;
+	border: 1px solid #024467;
+	width: 18em;
+	color: #024467;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+	margin-top: 2em;
+	margin-left: 1em;
+}
+
+/*When hovering over the CTA button the following properties will apply*/
+
+div.cta:hover
+{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transform: scale(1.01);
+}
+
+div.cta a
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/* Styling for the back to Top button that shows up in the bottom right corner of page when user scrolls down*/
+
+#myBtn
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 20px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: #4fadc6;
+	/* Set a background color */
+	color: white;
+	/* Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	font-size: 18px;
+	/* Increase font size */
+}
+
+#myBtn:hover
+{
+	background-color: #555;
+	/* Add a dark-grey background on hover */
+}
+
+/* Styles the Learn More button in the footer */
+
+.btn
+{
+	border: none;
+	/* Remove borders */
+	color: white;
+	/* Add a text color */
+	padding: 14px 28px;
+	/* Add some padding */
+	cursor: pointer;
+	/* Add a pointer cursor on mouse-over */
+	margin-left: 36%;
+	margin-top: 30%;
+}
+
+.more
+{
+	background-color: #f44336;
+}
+
+button.btn a
+{
+	color: white !important;
+}
+
+/* Red */
+
+.more:hover
+{
+	background: #da190b;
+}
+
+._Skins_SearchResults.mc-component #resultList
+{
+	line-height: 1.5;
+	margin-right: 6em;
+}
+
+span.SearchHighlight1
+{
+	background-color: #ffff66;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	/* ====================================================================================================*/
+	/*=======================================Base Rules====================================================*/
+	/* ====================================================================================================*/
+
+	p.footer
+	{
+		font-size: .7em;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Layout Rules ==================================================*/
+	/* ====================================================================================================*/
+
+	/* Removes extra padding added so that the top nav menu will fit in the header. Not necessary in the tablet view
+	since the top nav menu is removed and replaced with hamburger icon. */
+
+	.off-canvas-wrapper-inner nav.title-bar .outer-row
+	{
+		padding-right: 0;
+	}
+
+	/* Removes padding Flare adds to the sides of the inner wrapper.*/
+
+	.off-canvas-wrapper-inner .outer-row
+	{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+
+	/* Dictates the placement of the hamburger icon when in tablet view */
+
+	nav.title-bar .menu-icon
+	{
+		right: 2em;
+	}
+
+	/* Updates the space on the sides of the content on the main part of the page for tablet views.*/
+
+	div.row .row.collapse
+	{
+		padding-left: 8%;
+		padding-right: 6%;
+	}
+
+	/* Adds padding to the top of the top nav header so that the logo does not get cut off. 
+		The logo I added is larger than the original size logo MadCap had so I needed to do this.*/
+
+	.off-canvas-wrapper-inner nav.title-bar .outer-row
+	{
+		padding-top: 1em;
+	}
+
+	/* Updates the length and position of the search bar in the top nav header for tablet views.*/
+
+	.search-bar
+	{
+		width: 70%;
+		margin: 0 4%;
+	}
+
+	/* Updates the length and position of the search bar and buttons in the top nav for tablet views.*/
+
+	.nav-search
+	{
+		width: 84%;
+		margin-top: -2.8em;
+	}
+
+	/* Updates divs in the main topic layout for tablet views. */
+
+	div.topic-layout > div:nth-child(1)
+	{
+		width: 64%;
+		margin-left: 0;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 32.667%;
+		margin-left: 1.3333%;
+	}
+
+	/* =================================================== Footer =================================================  */
+	/* Updates footer divs placements and sizes. */
+
+	div.footer
+	{
+		height: 25%;
+	}
+
+	div.topicFooter > div:nth-child(1)
+	{
+		width: 100%;
+		height: 1em;
+	}
+
+	div.topicFooter > div:nth-child(2)
+	{
+		width: 16.667%;
+		margin-left: 6%;
+		max-height: 16em;
+		margin-right: 2%;
+	}
+
+	div.topicFooter > div:nth-child(3)
+	{
+		width: 44%;
+		margin-top: 1em;
+		max-width: 20em;
+		height: 11em;
+	}
+
+	div.topicFooter > div:nth-child(4)
+	{
+		width: 28%;
+		margin-left: 2%;
+	}
+
+	div.topicFooter > div:nth-child(5)
+	{
+		margin-top: -1em;
+	}
+
+	/* Updates the placement of the red Learn More button in the footer for Data Insiders.*/
+
+	.btn
+	{
+		margin-left: 30%;
+		margin-top: 30%;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Module Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* Styling for the modal drop down that appears when users click the arrow next to logo in header. */
+	/* Updated placement of the arrow for the drop down menu so that it stays around the same spot in tablet view.*/
+
+	div#topbar
+	{
+		left: 12%;
+		top: .5em;
+	}
+
+	div#components
+	{
+		width: 38%;
+		margin-left: 12%;
+		margin-top: -2.5%;
+	}
+
+	/* Updated feedback widget width so that it doesn't not get overlapped by the right side menu in tablet view.*/
+
+	div#feedback-survey
+	{
+		width: 96%;
+	}
+}
+
+/* max-width: 1279px */
+
+@media only screen and (max-width: 767px)
+{
+	/* ====================================================================================================*/
+	/*=======================================Base Rules====================================================*/
+	/* ====================================================================================================*/
+
+	div.topicFooter h5
+	{
+		font-size: 1em;
+		-webkit-margin-before: 1em;
+		-webkit-margin-after: 1em;
+	}
+
+	p.footer
+	{
+		font-size: .9em;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Layout Rules ==================================================*/
+	/* ====================================================================================================*/
+	/* Moves hamburger icon a little away from the side of the screen. */
+
+	.title-bar .menu-icon span
+	{
+		margin-right: 2em;
+	}
+
+	/* Removes padding on sides of footer that Flare adds. */
+
+	.off-canvas-wrapper-inner .outer-row
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Moves  */
+
+	.title-bar-layout a.logo
+	{
+		margin: -4em;
+	}
+
+	nav.title-bar
+	{
+		padding-bottom: 1.5em;
+	}
+
+	/* Dictates the placement of the hamburger icon when in mobile view */
+
+	nav.title-bar .menu-icon
+	{
+		right: 0em;
+	}
+
+	/* Adds padding to the bottom of the top nav header for mobile views.*/
+
+	.off-canvas-wrapper-inner nav.title-bar .outer-row
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Updates divs in the main topic layout for mobile views. */
+
+	div.topic-layout > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 2%;
+	}
+
+	/* Hides the right menu when in mobile view. */
+
+	div.topic-layout > div:nth-child(2)
+	{
+		display: none;
+	}
+
+	/* =================================================== Footer =================================================  */
+
+	div.footer
+	{
+		position: relative;
+	}
+
+	/* Centers the text in the main footer area.  */
+
+	div.topicFooter
+	{
+		text-align: center;
+	}
+
+	/* Updates footer divs placements and sizes. */
+
+	div.topicFooter > div:nth-child(1)
+	{
+		width: 100%;
+		height: 1em;
+	}
+
+	div.topicFooter > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0;
+		max-height: 17em;
+		margin-right: 2%;
+	}
+
+	div.topicFooter > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 2%;
+		margin-left: 0;
+		height: 13em;
+		max-width: 26em;
+	}
+
+	div.topicFooter > div:nth-child(4)
+	{
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-left: 0;
+	}
+
+	div.topicFooter > div:nth-child(6)
+	{
+		margin-left: 6%;
+	}
+
+	div.topicFooter > div:nth-child(8)
+	{
+		width: 25%;
+		margin-left: 4%;
+	}
+
+	/* ====================================================================================================*/
+	/* ==================================== Module Rules ==================================================*/
+	/* ====================================================================================================*/
+
+	img.topicLogo
+	{
+		max-width: 100%;
+		float: none;
+	}
+
+	/* Removes the search bar for Mobile views. */
+
+	.nav-search
+	{
+		display: none;
+	}
+
+	/* Updates the placement of the red Learn More button in the footer for Data Insiders.*/
+
+	.btn
+	{
+		margin-left: 2%;
+		margin-top: 32%;
+	}
+
+	div.cta
+	{
+		margin-left: 0em;
+	}
+
+	/* Styling for the modal drop down that appears when users click the arrow next to logo in header. */
+	/* Updated placement of the arrow for the drop down menu so that it stays around the same spot in tablet view.*/
+
+	div#topbar
+	{
+		left: 24%;
+	}
+
+	/* Updated padding of feedback widget so that the words do not have to wrap. */
+
+	div.feedback-question
+	{
+		padding: 1em;
+		padding-top: .5em;
+	}
+
+	.feedback-reason.yes-thanks
+	{
+		padding: 1em;
+		padding-top: .5em;
+	}
+
+	/* Classes that makes the menu modal appear when the user clicks the drop down arrow next to logo.*/
+
+	div#components
+	{
+		display: block;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component
+	{
+		display: block;
+	}
+
+	/* Styling for the modal drop down that appears when users click the arrow next to logo in header. */
+	/* Updated placement of the arrow for the drop down menu so that it stays around the same spot in mobile view.*/
+
+	div#components
+	{
+		width: 80%;
+		margin-left: 26%;
+		margin-top: -8.5%;
+	}
+
+	/* Updated feedback widget width so that it fits well on the screen in mobile view.*/
+
+	div#feedback-survey
+	{
+		width: 106%;
+		margin-left: 0em;
+		font-size: .9em;
+		padding: .5em;
+	}
+
+	/* The right-margin for the results on the search results page needs to be smaller on mobile screens.*/
+
+	._Skins_SearchResults.mc-component #resultList
+	{
+		margin-right: 2em;
+	}
+
+	/* The line-height or spacing between lines needs to be larger on mobile devices for the results headings. */
+
+	._Skins_SearchResults.mc-component #resultList h3.title
+	{
+		line-height: 1.5;
+	}
+}
+
+/* max-width: 767px */
+
+@media print
+{
+	
+}
+

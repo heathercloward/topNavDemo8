@@ -1,0 +1,178 @@
+/*<meta />*/
+
+@media only screen and (max-width: 1279px)
+{
+	/* Search Styles */
+
+	.search-bar .search-filter
+	{
+		font-size: 1em;
+	}
+
+	.button.login-button.feedback-required,
+	.button.edit-user-profile-button.feedback-required
+	{
+		display: none;
+	}
+
+	.pulse-frame
+	{
+		display: none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component
+	{
+		background: #fafafa;
+		background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#fafafa));
+		background: -webkit-linear-gradient(top, #fafafa 0%, #fafafa 100%);
+		background: -o-linear-gradient(top, #fafafa 0%,#fafafa 100%);
+		background: -ms-linear-gradient(top, #fafafa 0%,#fafafa 100%);
+		background: linear-gradient(top, #fafafa 0%,#fafafa 100%);
+		-pie-background: linear-gradient(#fafafa, #fafafa);
+	}
+
+	ul.menu._Skins_SideMenu.mc-component a
+	{
+		
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a.selected
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a:hover
+	{
+		background-color: #7babf8;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #7babf8;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #7babf8;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #7babf8;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #7babf8;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component li > a:hover
+	{
+		background-color: #20aa97;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #20aa97;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #20aa97;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #20aa97;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #20aa97;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a.selected:hover
+	{
+		background-color: #7babf8;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component li > a.selected:hover
+	{
+		background-color: #20aa97;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component
+	{
+		background-color: #fafafa;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component a
+	{
+		
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component ul ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_ContextMenu.mc-component li > a.selected
+	{
+		background-color: transparent;
+	}
+}
+
